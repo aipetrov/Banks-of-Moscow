@@ -1,0 +1,25 @@
+﻿<Window x:Name="RegisterWindow" x:Class="Banks_of_Moscow.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banks_of_Moscow"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="349.142" Width="396.456">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="309*"/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxFIO" HorizontalAlignment="Left" Height="23" Margin="32,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="324" Grid.ColumnSpan="2"/>
+        <Label Content="Введите ФИО:" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBoxLogin" HorizontalAlignment="Left" Height="23" Margin="32,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="324" Grid.ColumnSpan="2"/>
+        <Label Content="Введите логин:" HorizontalAlignment="Left" Margin="32,69,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Введите пароль:" HorizontalAlignment="Left" Margin="32,128,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Повторите пароль:" HorizontalAlignment="Left" Margin="32,187,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ButtonRegister" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="122,268,0,0" VerticalAlignment="Top" Width="128" Height="29" Click="Button_Click"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="32,159,0,0" VerticalAlignment="Top" Width="324" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="PasswordAgainBox" HorizontalAlignment="Left" Margin="32,218,0,0" VerticalAlignment="Top" Width="324" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
